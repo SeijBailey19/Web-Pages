@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 92%);
+    font-family: 'Kulim Park', sans-serif;
+}
+
+header nav.navbar#nav-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+header nav.navbar#nav-1 > div{
+
+}
+
+#name{
+    padding: 10px 0 15px 10px;
+    border-bottom: solid 1px grey;
+    /* border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; */
+}
+
+.whats-new{
+    color: hsl(0, 70%, 70%);
+}
+
+.lists{
+    border-bottom: solid 1px grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.lists ul > li{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.lists ul li{
+    list-style-type: none;
+}
+
+.lists ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.lists ul li a:hover{
+    color: hsl(300, 70%, 70%);
+}
+
+#list-1{
+    margin-left: 2%;
+}
+
+#list-2{
+    margin-right: 2%;
+}
+
+
+
+/* SECTION ONE */
+#apparel{
+    width: 100%;
+    height: auto;
+    max-height: 90%;
+    /* background: hsl(0, 0%, 85%); */
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-row-gap: 8em;
+    margin-bottom: 40px;
+}
+
+#deals{
+    text-align: center;
+    padding: 20px;
+}
+
+#apparel .card-1,
+#apparel .card-2,
+#apparel .card-3,
+#apparel .card-4,
+#apparel .card-5{
+    text-align: center;
+    width: 90%;
+    min-height: 400px;
+    justify-self: center;
+}
+
+#apparel .card-1 #women-fash{
+    padding: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#apparel .card-2 #men-fash{
+    padding: 10px;
+    color: hsl(0, 70%, 80%);
+    font-size: 1.5em;
+}
+
+
+#apparel .card-1{
+    background: url('../images/women-s-pink-sweatshirt-and-brown-plaid-skirt-794064.jpg') no-repeat;  
+    background-size: cover;
+    background-position: center;
+}
+
+#apparel .card-2{
+    background: url('../images/man-in-white-long-sleeved-shirt-and-brown-pants-1953451.jpg') no-repeat;  
+    background-size: cover;
+    background-position: center;
+}
+
+#apparel .card-3{
+    width: 100%;
+    font-size: 1.5em;
+    /* background: hsl(0, 0%, 85%); */
+    padding: 20px;
+    line-height: 1.6em;
+}
+
+#apparel .card-3 .discount{
+    color: white;
+    text-shadow:0px 0px 10px hsl(0, 70%, 80%);
+}
+
+#apparel .card-4{
+    font-size: 1.5em;
+    padding: 20px;
+    line-height: 1.6em;
+}
+
+#apparel .card-4 #discount-2{
+    color: white;
+    text-shadow:0px 0px 10px hsl(0, 70%, 80%);
+}
+
+#apparel .card-5{ 
+    grid-column: span 2;
+    background: url('../images/girl-in-black-dress-standing-beside-girl-in-white-sweatshirt-1620760.jpg') no-repeat;  
+    background-size: cover;
+    background-position: center;
+}
+
+#apparel .card-5 #child-fash{
+    padding: 10px;
+    color: turquoise;
+    font-size: 1.5em;    
+}
+
+#apparel .card-4,
+#apparel .card-5{
+    width: 60%;
+    justify-self: center;
+    /* background: white; */
+}

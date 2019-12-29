@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Structured - Responsive: 1</title>
+</head>
+<body>
+    <header>
+        <h1 id="title" onmouseenter="alert('hello')">Practice For Neatness</h1>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reprehenderit, eos quibusdam voluptate dicta fugiat eaque voluptas quis neque placeat excepturi, temporibus sapiente praesentium quisquam iusto deleniti consequatur optio dolor.</p>
+            <h2>Practice</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus adipisci in cumque, odit quidem consequatur beatae nostrum dicta aut officia sequi voluptas odio non sint! Expedita itaque tempore cum minima.</p>
+            <!-- <p>Please login with your <span>username</span> and <span>password</span> below.</p>           -->
+        </div>
+        
+        <!-- Flexbox Practice! -->
+        <div class="container-flex-1">
+                <div class="contained-1">
+                    <h2>Flexedbox One</h2>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                    </ul>
+                </div>
+                <div class="contained-2">
+                    <h2>Flexedbox Two</h2>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                    </ul>
+                </div>
+                <div class="contained-3">
+                    <h2>Flexedbox Three</h2>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                        <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corporis?</p></li>
+                    </ul>
+                </div>      
+        </div>
+       <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis tempore iste ab, labore blanditiis atque, earum ipsa soluta accusamus ipsam, aliquam tempora voluptatem perferendis quia architecto optio placeat error natus repudiandae eligendi eum excepturi neque. Id corporis consequuntur ratione assumenda et esse voluptate distinctio iste explicabo hic! Libero, minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis tempore iste ab, labore blanditiis atque, earum ipsa soluta accusamus ipsam, aliquam tempora voluptatem perferendis quia architecto optio placeat error natus repudiandae eligendi eum excepturi neque. Id corporis consequuntur ratione assumenda et esse voluptate distinctio iste explicabo hic! Libero, minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis tempore iste ab, labore blanditiis atque, earum ipsa soluta accusamus ipsam, aliquam tempora voluptatem perferendis quia architecto optio placeat error natus repudiandae eligendi eum excepturi neque. Id corporis consequuntur ratione assumenda et esse voluptate distinctio iste explicabo hic! Libero, minus.</p>
+        </div>
+
+        <div class="container">
+            <h2 id="centerMe">For Native Members</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis deleniti adipisci dolores eius natus facilis pariatur ab placeat! Nisi quis tempora quibusdam debitis iure commodi labore quas dolorem repellendus voluptas!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur <span>adipisicing elit</span>. Cum reiciendis quas, tempora natus <span>et voluptate</span> laboriosam, cumque soluta minima earum autem odit? Accusamus suscipit nobis animi eveniet beatae a.</p>
+        </div>
+<hr size="3px" width="100%">
+        <div class="container">
+            <h3>Login</h3>
+            <label> Username:
+                <input id="user" type="text" placeholder="example@blah.com">
+            </label>
+            
+            <label> Password:
+                 <input id="pw" type="password" placeholder="$DontLookAtM3!">
+            </label>
+            <button class="login" name="login-button" type="submit">Login Now</button>
+            <br>
+            <p>Forgot username or password?</p>
+            <button type="button" name="custom-button" class="custom-button-1">Reset Password</button>
+            <button type="button" name="custom-button" class="custom-button-2">Username</button>
+        </div>
+    </section>
+<hr size="3px" width="80%">
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+       
+    <script>
+        $(document).ready(function(){
+            $('input').focus(function(){
+                $(this).css('background','hsl(0, 0%, 40%)');
+                $(this).css('color', 'hsl(0, 0%, 100%)');
+            });
+            $('input').blur(function(){
+                $(this).css('background', 'hsl(0, 0%, 100%)');
+                $(this).css('color', 'hsl(0, 0%, 0%)');
+            });
+            $('button.login').click(function(){
+                alert('You are now logged in.');
+            });
+
+            // $('#change').hover(function(){
+            //     $('#change').css('color', 'hsl(60, 0%, 70%)');
+            // }, 
+            // function(){
+            //     $('#change').css('color', 'hsl(220, 70%, 70%)');
+            // });
+
+            // alert($('#title').html());
+
+        });    
+    </script>
+</body>
+</html>

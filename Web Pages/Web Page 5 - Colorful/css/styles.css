@@ -1,0 +1,114 @@
+/* Global */
+*{ margin: 0; padding: 0;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* letter-spacing: .1em; */
+    line-height: 1.2em;
+    font-size: 22px;
+}
+
+section{
+    height: 100vh;
+    display: grid;
+} 
+
+
+div{
+    /* border: solid 1px white; */
+}
+
+/* Container Div */
+
+.container{
+    
+    width: 50%;
+    margin: auto;
+    /* display: grid; */
+}
+
+
+
+/* Section One */
+section#one{
+    background: hsl(60, 100%, 47%);
+    color: ivory;
+}
+
+section#one .container{
+
+}
+
+section#one .container h1{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 50px;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 10px hsl(60, 100%, 37%);
+}
+
+
+/* Section Two */
+section#two{
+    background: hsl(322, 100%, 50%);
+    color: hsl(60, 100%, 67%);
+}
+
+section#two .container{
+    display: flex;
+}
+
+section#two .container > div{
+    
+}
+
+section#two .container div.title{
+    align-self: flex-start;
+    font-size: 30px;
+    padding: 40px;
+    line-height: 2em;
+
+    border: solid 1px transparent;
+    box-shadow: inset 2px 2px 10px hsl(322, 100%, 30%);
+    border-radius: 4px;
+
+
+}
+
+section#two .container div.content{
+    align-self: center;
+    padding: 10px;
+}
+
+/* Section Three */
+section#three{
+    background: hsl(173, 100%, 50%);
+    color: hsl(322, 100%, 50%);
+}
+
+section#three .container{
+    display: flex;
+}
+
+section#three .container .title{
+    line-height: 2em;
+    order: 2;
+    padding: 20px;
+}
+
+section#three .container .title h1{
+    border: solid 1px transparent;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px hsl(173, 100%, 30%);
+    background: hsl(173, 100%, 70%);
+}
+
+section#three .container .content{
+    border: solid 1px transparent;
+    box-shadow: inset 2px 2px 10px hsl(173, 100%, 30%);
+    border-radius: 4px;
+    order: 1;
+    padding: 20px;
+}

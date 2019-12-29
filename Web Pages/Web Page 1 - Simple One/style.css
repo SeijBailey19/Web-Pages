@@ -1,0 +1,103 @@
+/*GLOBAL*/
+body {
+    background-color: rgb(75, 75, 75);
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+
+/*HEADER*/
+
+header {
+    border-style: ridge;
+    border-color: bisque;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+    display: flexbox;
+    
+    background: linear-gradient(300deg, 
+    rgba(206, 206, 206, 0.8) 0%,
+    rgba(153, 153, 153, 0.3)25%,
+    rgba(139, 139, 139, 0.6033333333)75%,
+    rgba(206, 206, 206, 0.8)100%);
+    box-shadow: 0 0 25px, rgba(0, 0, 0, 0.1) ,inset 0 0 1px whitesmoke;
+    padding: 10px;
+}
+section h2 {
+   box-shadow:inset 5 5 5px, darkgrey; 
+
+}
+
+/*
+header div nav ul {
+    background: linear-gradient(90deg, 
+    rgba(206, 206, 206, 0.8) 0%,
+    rgba(71, 71, 71, 0.103)25%,
+    rgba(71, 71, 71,0.2)75%,
+    rgba(206, 206, 206, 0.8)100%);
+    box-shadow: 0 0 25px, rgba(0, 0, 0, 0.1) ,inset 0 0 1px whitesmoke;
+    padding: 10px;
+    
+
+}
+*/
+header div nav li {
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 15px;     
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header div nav li a {
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(179, 218, 212, 0.3);
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header a.themeOne:hover {
+
+    background: linear-gradient(37deg, 
+    rgba(144, 248, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.356)25%,
+    rgba(255,255,255,0.2)75%,
+    rgba(144, 248, 255, 0.8)100%);
+    box-shadow: 0 0 25px, rgba(0, 0, 0, 0.1) ,inset 0 0 1px whitesmoke;
+    color: azure;
+}
+
+header a.themeTwo:hover {
+    background: rgb(212, 200, 143);
+    color: whitesmoke;
+}
+
+header a.themeThree:hover {
+    background: linear-gradient(300deg, 
+    rgba(99, 99, 99, 0) 0%,
+    rgba(173, 173, 173, 0.8)25%,
+    rgba(99, 99, 99, 0.8)75%,
+    rgba(173, 173, 173, 0.8)100%);
+    color: whitesmoke;
+}
+
+.styleMe{
+    background: rgba(139, 139, 139, 0.6033333333);
+    padding: 1px;
+    border: solid 2px rgba(212, 200, 143, 5%);
+    border-radius: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+.styleMe:hover{
+    background: rgb(212, 200, 143);
+    text-align: center;
+}
